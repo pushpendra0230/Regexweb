@@ -312,11 +312,11 @@ const PlacedStudents = () => {
   return (
     <div className="bg-[#F8F9FA] py-12">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-900 mb-2">
           Placed Students
         </h2>
         <div className="flex justify-center">
-          <div className="h-1 bg-gray-800 w-20 mb-4"></div>
+          <div className="h-0.5 bg-blue-900 w-20 mb-4"></div>
         </div>
 
         {/* Slider */}
@@ -340,10 +340,8 @@ const PlacedStudents = () => {
                   alt={student.name}
                   className="w-24 h-24 rounded-full mx-auto mb-4"
                 />
-                <p className="text-lg font-semibold text-gray-800 mb-2">
-                  {student.name}
-                </p>
-                <p className="text-gray-600">{student.company}</p>
+                <p className="text-lg text-gray-400 mb-2">{student.name}</p>
+                <p className="text-blue-600 font-bold">{student.company}</p>
               </div>
             ))}
           </div>
@@ -698,7 +696,7 @@ const Training = () => {
           {programsData.map((program, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md p-6 flex flex-col"
+              className="bg-white rounded-lg shadow-xl p-6 flex flex-col"
             >
               <img
                 src={program.image}

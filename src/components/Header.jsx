@@ -19,24 +19,32 @@ const Navbar = () => {
           <a
             href="https://www.linkedin.com/company/regexsoftware/posts/?feedView=all"
             className="hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             LinkedIn
           </a>
           <a
             href="https://www.instagram.com/regexsoftware/"
             className="hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Instagram
           </a>
           <a
             href="https://web.telegram.org/a/#-1001169206547"
             className="hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Telegram
           </a>
           <a
             href="https://www.facebook.com/regexsoftwares"
             className="hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Facebook
           </a>

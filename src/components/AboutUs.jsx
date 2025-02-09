@@ -253,16 +253,21 @@ const AboutUs = () => {
                 img: "https://www.regexsoftware.com/wp-content/uploads/elementor/thumbs/Shivam-pky7vhx4oobr980w2z7u1wmkxuk5vyx9jx9mw4qtl0.jpeg",
                 name: "Shivam Maheshwari",
                 role: "CO-FOUNDER & CEO",
+                linkedin:
+                  "https://www.linkedin.com/in/shivam-maheshwari-812331122/",
+                youtube: "https://www.youtube.com/c/REGexSoftware",
               },
               {
                 img: "https://www.regexsoftware.com/wp-content/uploads/elementor/thumbs/Tushar-pky7xtkrkxi9yindihdmptilt53tx15djfbulras78.jpeg",
                 name: "Tushar Goyal",
                 role: "CO-FOUNDER & CTO",
+                linkedin: "https://www.linkedin.com/in/tushar-goyal-229456114/",
+                youtube: "https://www.youtube.com/c/REGexSoftware",
               },
             ].map((member, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-lg p-12 w-full md:w-3/4 mx-auto"
+                className="bg-white rounded-lg shadow-xl p-12 w-full md:w-3/4 mx-auto"
               >
                 <img
                   src={member.img}
@@ -276,14 +281,24 @@ const AboutUs = () => {
                   {member.role}
                 </p>
                 <div className="flex justify-center space-x-4">
-                  <a href="#" className="text-blue-500 hover:text-blue-700">
+                  <a
+                    href={member.linkedin}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src="https://img.icons8.com/?size=48&id=xuvGCOXi8Wyg&format=png"
                       alt="LinkedIn"
                       className="h-8 w-8"
                     />
                   </a>
-                  <a href="#" className="text-red-500 hover:text-red-700">
+                  <a
+                    href={member.youtube}
+                    className="text-red-500 hover:text-red-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src="https://img.icons8.com/?size=48&id=9a46bTk3awwI&format=png"
                       alt="YouTube"
