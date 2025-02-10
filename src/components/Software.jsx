@@ -17,9 +17,9 @@ const SoftwareAndWhyRegex = () => {
       </div>
 
       {/* Software Services Section */}
-      <div className="container mx-auto px-6 py-12 text-center">
+      <div className="container mx-auto px-6 sm:px-12 md:px-24 lg:px-36 py-12 text-center">
         <div className="mb-8">
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-black leading-relaxed text-sm">
             <span className="font-bold">REGex Software Services</span> offer a
             comprehensive range of software services that cater to the diverse
             needs of our clients. Our goal is to provide innovative and
@@ -31,7 +31,7 @@ const SoftwareAndWhyRegex = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mt-30">
           {[
             {
               title: "Web Applications",
@@ -70,7 +70,7 @@ const SoftwareAndWhyRegex = () => {
       </div>
 
       {/* Why REGex Section */}
-      <div className="container mx-auto px-6 py-12 text-center">
+      {/* <div className="container mx-auto px-30 py-12 text-center">
         <h2 className="text-3xl font-bold text-blue-900 mb-6">Why REGex?</h2>
         <div className="mb-6 w-40 mx-auto border-b-2 border-blue-900"></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -108,7 +108,7 @@ const SoftwareAndWhyRegex = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className={`rounded-lg shadow-md p-8 ${
+              className={`shadow-[0_10px_30px_rgba(0.4,0.4,0.4,0.4)] p-8 ${
                 [1, 3, 5].includes(index)
                   ? "bg-blue-900 text-white"
                   : "bg-white"
@@ -117,9 +117,68 @@ const SoftwareAndWhyRegex = () => {
               <img
                 src={item.img}
                 alt={item.title}
-                className="mx-auto mb-4 h-40 w-40 object-contain"
+                className="rounded-full mx-auto mb-4 h-40 w-40 object-contain"
               />
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <p className="leading-relaxed text-sm">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div> */}
+
+      <div className="container mx-auto px-6 sm:px-12 md:px-34 py-12 text-center">
+        <h2 className="text-3xl font-bold text-blue-900 mb-6">Why REGex?</h2>
+        <div className="mb-6 w-24 sm:w-40 mx-auto border-b-2 border-blue-900"></div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: "Expertise",
+              img: "https://www.regexsoftware.com/wp-content/uploads/2020/11/edtech.png",
+              desc: "We pride ourselves on having a highly skilled team of software developers who possess extensive expertise and experience in various domains and technologies. Our developers stay up-to-date with the latest industry trends and best practices, enabling them to deliver high-quality software solutions that meet your specific requirements.",
+            },
+            {
+              title: "Customized Solutions",
+              img: "https://www.regexsoftware.com/wp-content/uploads/2020/11/liveclass.png",
+              desc: "We understand that every business has unique needs and challenges. That's why we focus on developing tailor-made software solutions that are designed to address your specific business objectives. We take the time to understand your requirements, analyze your workflows, and create software that perfectly aligns with your goals, ensuring maximum efficiency and productivity.",
+            },
+            {
+              title: "Agile Development Methodology",
+              img: "https://www.regexsoftware.com/wp-content/uploads/2020/11/liveproject.png",
+              desc: "We follow an Agile development methodology, which allows for greater flexibility, collaboration, and adaptability throughout the software development lifecycle. By breaking the project into smaller iterations, we can incorporate your feedback and make adjustments along the way, ensuring that the final product meets your expectations.",
+            },
+            {
+              title: "Quality Assurance",
+              img: "https://www.regexsoftware.com/wp-content/uploads/2022/02/Virtual-Learning.jpg",
+              desc: "Quality is at the forefront of everything we do. Our dedicated quality assurance team conducts rigorous testing at every stage of the development process to ensure that the software is robust, secure, and free of any defects or vulnerabilities. We employ various testing methodologies, including functional testing, performance testing, security testing, and user acceptance testing, to deliver a high-quality, reliable product.",
+            },
+            {
+              title: "Transparent Communication",
+              img: "https://www.regexsoftware.com/wp-content/uploads/2020/11/mentorship.png",
+              desc: "we provide regular updates on the project's progress, discuss any challenges or roadblocks, and actively seek your input and feedback. We value your ideas and opinions, and we strive to maintain open lines of communication to ensure that we are always on the same page.",
+            },
+            {
+              title: "Post-Development Support",
+              img: "https://www.regexsoftware.com/wp-content/uploads/2020/11/hiring-package.png",
+              desc: "Our commitment to your success extends beyond the development phase. We offer comprehensive post-development support, including maintenance, bug fixes, and system enhancements. Our dedicated support team is always available to address any concerns or issues that may arise after the software is deployed, ensuring smooth operation and user satisfaction.",
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className={`shadow-lg md:shadow-xl p-6 sm:p-8 ${
+                [1, 3, 5].includes(index)
+                  ? "bg-blue-900 text-white"
+                  : "bg-white"
+              }`}
+            >
+              <img
+                src={item.img}
+                alt={item.title}
+                className="rounded-full mx-auto mb-4 h-32 w-32 object-contain"
+              />
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+                {item.title}
+              </h3>
               <p className="leading-relaxed text-sm">{item.desc}</p>
             </div>
           ))}
@@ -138,68 +197,143 @@ const SoftwareAndWhyRegex = () => {
       <NavLink to="/Allsoftware"></NavLink>
 
       {/* Contact Us Section */}
-      <div className="container mx-auto px-6 py-12">
-        <div className="bg-gray-200 rounded-lg shadow-md p-8 w-full">
-          <h2 className="text-3xl font-bold text-blue-900 mb-6 text-left">
+      {/* <div className="container mx-auto px-30 py-12">
+        <div className=" bg-gray-100 shadow-md p-8 w-full">
+          <h2 className="text-3xl font-semibold text-blue-900 mb-6 text-left">
             Contact Us
           </h2>
-          <div className="w-50 h-1 bg-blue-900 mb-6"></div>
+          <div className="w-50 h-0.5 bg-blue-900 mb-6"></div>
           <form>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block text-gray-700 font-medium mb-2">
-                  First Name *
+                <label className="block text-black font-medium mb-2">
+                  First Name <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
-                  className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                  className="border border-gray-300 px-4 py-2 w-full bg-white"
                   required
                 />
               </div>
               <div>
-                <label className="block text-gray-700 font-medium mb-2">
-                  Last Name *
+                <label className="block text-black font-medium mb-2">
+                  Last Name <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
-                  className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                  className="border border-gray-300 px-4 py-2 w-full bg-white"
                   required
                 />
               </div>
             </div>
             <div className="mb-4 mt-4">
-              <label className="block text-gray-700 font-medium mb-2">
-                Email *
+              <label className="block text-black font-medium mb-2">
+                Email <span className="text-red-500">*</span>
               </label>
               <input
                 type="email"
-                className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                className="border border-gray-300 px-4 py-2 w-full bg-white"
                 required
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700 font-medium mb-2">
-                Phone *
+              <label className="block text-black font-medium mb-2">
+                Phone <span className="text-red-500">*</span>
               </label>
               <input
                 type="tel"
-                className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                className="border border-gray-300 px-4 py-2 w-full bg-white"
                 required
               />
             </div>
             <div className="mb-6">
-              <label className="block text-gray-700 font-medium mb-2">
-                Query *
+              <label className="block text-black font-medium mb-2">
+                Query <span className="text-red-500">*</span>
               </label>
               <textarea
-                className="border border-gray-300 rounded-md px-4 py-2 w-full h-32 resize-none"
+                className="border border-gray-300 px-4 py-2 w-full h-32 resize-none bg-white"
                 required
               ></textarea>
             </div>
             <div className="text-left">
               <button
                 type="submit"
-                className="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-md"
+                className="bg-gray-100 text-black py-2 px-6 border border-gray-300"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div> */}
+      {/* Contact Us Section */}
+      <div className="container mx-auto px-6 sm:px-12 md:px-34 py-12">
+        <div className="bg-gray-100 shadow-lg p-8 w-full">
+          <h2 className="text-3xl font-semibold text-blue-900 mb-4 text-left">
+            Contact Us
+          </h2>
+          <div className="w-20 h-1 bg-blue-900 mb-6"></div>
+
+          <form>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-black font-medium mb-2">
+                  First Name <span className="text-red-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  className="border border-gray-300 px-4 py-2 w-full focus:ring-2 focus:ring-blue-400 bg-white"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-black font-medium mb-2">
+                  Last Name <span className="text-red-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  className="border border-gray-300 px-4 py-2 w-full focus:ring-2 focus:ring-blue-400 bg-white"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="mb-4 mt-4">
+              <label className="block text-black font-medium mb-2">
+                Email <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="email"
+                className="border border-gray-300 px-4 py-2 w-full focus:ring-2 focus:ring-blue-400 bg-white"
+                required
+              />
+            </div>
+
+            <div className="mb-4">
+              <label className="block text-black font-medium mb-2">
+                Phone <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="tel"
+                className="border border-gray-300 px-4 py-2 w-full focus:ring-2 focus:ring-blue-400 bg-white"
+                required
+              />
+            </div>
+
+            <div className="mb-6">
+              <label className="block text-black font-medium mb-2">
+                Query <span className="text-red-500">*</span>
+              </label>
+              <textarea
+                className="border border-gray-300 px-4 py-2 w-full h-32 resize-none focus:ring-2 focus:ring-blue-400 bg-white"
+                required
+              ></textarea>
+            </div>
+
+            <div className="text-left">
+              <button
+                type="submit"
+                className="bg-gray-100 text-black py-2 px-6 border border-gray-300"
               >
                 Submit
               </button>
