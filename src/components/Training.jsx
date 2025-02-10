@@ -11,7 +11,8 @@ const StatsHeader = () => {
   ];
 
   return (
-    <div className="bg-[#0A2463] py-12">
+    // <div className="bg-[#0A2463] py-12">
+    <div className="bg-[#F8F9FA] py-12">
       {" "}
       {/* Dark blue background */}
       <div className="container mx-auto px-4">
@@ -359,6 +360,171 @@ const PlacedStudents = () => {
   );
 };
 
+// const EnquiryForm = () => {
+//   const [formData, setFormData] = useState({
+//     firstName: "",
+//     lastName: "",
+//     email: "",
+//     phone: "",
+//     areYouA: "",
+//     collegeCompany: "",
+//     query: "",
+//   });
+
+//   const handleChange = (e) => {
+//     setFormData({ ...formData, [e.target.name]: e.target.value });
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     // Handle form submission here (e.g., send data to server)
+//     console.log("Form submitted:", formData);
+//   };
+
+//   return (
+//     <div className="flex justify-center">
+//       <div className="bg-white p-10 rounded-lg shadow-md max-w-[1100px] w-full">
+//         <h2 className="text-2xl font-bold text-blue-900 mb-4">
+//           Enquire Now
+//           <div className="h-1 bg-blue-900 w-20 mt-2"></div> {/* Border line */}
+//         </h2>
+//         <form onSubmit={handleSubmit} className="space-y-4">
+//           <div className="grid grid-cols-2 gap-4">
+//             <div>
+//               <label
+//                 htmlFor="firstName"
+//                 className="block text-gray-700 font-medium mb-1"
+//               >
+//                 First <span className="text-red-500">*</span>
+//               </label>
+//               <input
+//                 type="text"
+//                 id="firstName"
+//                 name="firstName"
+//                 value={formData.firstName}
+//                 onChange={handleChange}
+//                 className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+//                 required
+//               />
+//             </div>
+//             <div>
+//               <label
+//                 htmlFor="lastName"
+//                 className="block text-gray-700 font-medium mb-1"
+//               >
+//                 Last <span className="text-red-500">*</span>
+//               </label>
+//               <input
+//                 type="text"
+//                 id="lastName"
+//                 name="lastName"
+//                 value={formData.lastName}
+//                 onChange={handleChange}
+//                 className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+//                 required
+//               />
+//             </div>
+//           </div>
+//           <div>
+//             <label
+//               htmlFor="email"
+//               className="block text-gray-700 font-medium mb-1"
+//             >
+//               Email <span className="text-red-500">*</span>
+//             </label>
+//             <input
+//               type="email"
+//               id="email"
+//               name="email"
+//               value={formData.email}
+//               onChange={handleChange}
+//               className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+//               required
+//             />
+//           </div>
+//           <div>
+//             <label
+//               htmlFor="phone"
+//               className="block text-gray-700 font-medium mb-1"
+//             >
+//               Phone <span className="text-red-500">*</span>
+//             </label>
+//             <input
+//               type="tel"
+//               id="phone"
+//               name="phone"
+//               value={formData.phone}
+//               onChange={handleChange}
+//               className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+//               required
+//             />
+//           </div>
+//           <div>
+//             <label
+//               htmlFor="areYouA"
+//               className="block text-gray-700 font-medium mb-1"
+//             >
+//               Are you a ? <span className="text-red-500">*</span>
+//             </label>
+//             <select
+//               id="areYouA"
+//               name="areYouA"
+//               value={formData.areYouA}
+//               onChange={handleChange}
+//               className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+//               required
+//             >
+//               <option value="">Select</option>
+//               <option value="student">Student</option>
+//               <option value="professional">Professional</option>
+//             </select>
+//           </div>
+//           <div>
+//             <label
+//               htmlFor="collegeCompany"
+//               className="block text-gray-700 font-medium mb-1"
+//             >
+//               College Name/Company Name <span className="text-red-500">*</span>
+//             </label>
+//             <input
+//               type="text"
+//               id="collegeCompany"
+//               name="collegeCompany"
+//               value={formData.collegeCompany}
+//               onChange={handleChange}
+//               className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+//               required
+//             />
+//           </div>
+//           <div>
+//             <label
+//               htmlFor="query"
+//               className="block text-gray-700 font-medium mb-1"
+//             >
+//               Any query <span className="text-red-500">*</span>
+//             </label>
+//             <textarea
+//               id="query"
+//               name="query"
+//               value={formData.query}
+//               onChange={handleChange}
+//               rows="4"
+//               className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+//               required
+//             ></textarea>
+//           </div>
+//           <button
+//             type="submit"
+//             className="bg-gray-200 hover:bg-blue-700 text-black py-2 px-4 rounded"
+//           >
+//             Submit
+//           </button>
+//         </form>
+//       </div>
+//     </div>
+//   );
+// };
+
 const EnquiryForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -376,148 +542,132 @@ const EnquiryForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here (e.g., send data to server)
     console.log("Form submitted:", formData);
+
+    // ✅ Reset form fields after submission
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      areYouA: "",
+      collegeCompany: "",
+      query: "",
+    });
   };
 
   return (
-    <div className="bg-white p-8 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">
-        Enquire Now
-        <div className="h-1 bg-gray-800 w-20 mt-2"></div> {/* Border line */}
-      </h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="grid grid-cols-2 gap-4">
+    <div className="flex justify-center">
+      <div className="bg-white p-10 rounded-lg shadow-md max-w-[1100px] w-full">
+        <h2 className="text-2xl font-bold text-blue-900 mb-4">
+          Enquire Now
+          <div className="h-1 bg-blue-900 w-20 mt-2"></div>
+        </h2>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <label className="block text-gray-700 font-medium mb-1">
+                First <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                className="border border-gray-300 rounded-md px-3 py-2 w-full focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700 font-medium mb-1">
+                Last <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                className="border border-gray-300 rounded-md px-3 py-2 w-full focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
+          </div>
           <div>
-            <label
-              htmlFor="firstName"
-              className="block text-gray-700 font-medium mb-1"
-            >
-              First
+            <label className="block text-gray-700 font-medium mb-1">
+              Email <span className="text-red-500">*</span>
             </label>
             <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              value={formData.firstName}
+              type="email"
+              name="email"
+              value={formData.email}
               onChange={handleChange}
-              className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 rounded-md px-3 py-2 w-full focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
           <div>
-            <label
-              htmlFor="lastName"
-              className="block text-gray-700 font-medium mb-1"
-            >
-              Last
+            <label className="block text-gray-700 font-medium mb-1">
+              Phone <span className="text-red-500">*</span>
             </label>
             <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              value={formData.lastName}
+              type="tel"
+              name="phone"
+              value={formData.phone}
               onChange={handleChange}
-              className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 rounded-md px-3 py-2 w-full focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
-        </div>
-        <div>
-          <label
-            htmlFor="email"
-            className="block text-gray-700 font-medium mb-1"
+          <div>
+            <label className="block text-gray-700 font-medium mb-1">
+              Are you a ? <span className="text-red-500">*</span>
+            </label>
+            <select
+              name="areYouA"
+              value={formData.areYouA}
+              onChange={handleChange}
+              className="border border-gray-300 rounded-md px-3 py-2 w-full focus:ring-2 focus:ring-blue-500"
+              required
+            >
+              <option value="">Select</option>
+              <option value="student">Student</option>
+              <option value="professional">Professional</option>
+            </select>
+          </div>
+          <div>
+            <label className="block text-gray-700 font-medium mb-1">
+              College Name/Company Name <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              name="collegeCompany"
+              value={formData.collegeCompany}
+              onChange={handleChange}
+              className="border border-gray-300 rounded-md px-3 py-2 w-full focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+          <div>
+            <label className="block text-gray-700 font-medium mb-1">
+              Any query <span className="text-red-500">*</span>
+            </label>
+            <textarea
+              name="query"
+              value={formData.query}
+              onChange={handleChange}
+              rows="4"
+              className="border border-gray-300 rounded-md px-3 py-2 w-full focus:ring-2 focus:ring-blue-500"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="bg-gray-200 hover:bg-blue-700 text-black py-2 px-4 rounded"
           >
-            Email *
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
-          />
-        </div>
-        <div>
-          <label
-            htmlFor="phone"
-            className="block text-gray-700 font-medium mb-1"
-          >
-            Phone *
-          </label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
-          />
-        </div>
-        <div>
-          <label
-            htmlFor="areYouA"
-            className="block text-gray-700 font-medium mb-1"
-          >
-            Are you a ? *
-          </label>
-          <select
-            id="areYouA"
-            name="areYouA"
-            value={formData.areYouA}
-            onChange={handleChange}
-            className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
-          >
-            <option value="">Select</option>
-            <option value="student">Student</option>
-            <option value="professional">Professional</option>
-          </select>
-        </div>
-        <div>
-          <label
-            htmlFor="collegeCompany"
-            className="block text-gray-700 font-medium mb-1"
-          >
-            College Name/Company Name *
-          </label>
-          <input
-            type="text"
-            id="collegeCompany"
-            name="collegeCompany"
-            value={formData.collegeCompany}
-            onChange={handleChange}
-            className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
-          />
-        </div>
-        <div>
-          <label
-            htmlFor="query"
-            className="block text-gray-700 font-medium mb-1"
-          >
-            Any query *
-          </label>
-          <textarea
-            id="query"
-            name="query"
-            value={formData.query}
-            onChange={handleChange}
-            rows="4"
-            className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          className="bg-gray-200 hover:bg-blue-700 text-black py-2 px-4 rounded"
-        >
-          Submit
-        </button>
-      </form>
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
@@ -627,8 +777,8 @@ const Training = () => {
       </div>
 
       {/* Training Section */}
-      <div className="container mx-auto px-6 py-12 text-center">
-        <p className="text-gray-700 leading-relaxed mb-6">
+      <div className="container mx-auto px-6 sm:px-12 md:px-20 lg:px-32 py-8 text-center">
+        <p className="text-sm text-black leading-relaxed mb-4">
           <strong>REGex Software Services</strong> are devised to bring an extra
           edge to Information Technology. We believe to transform your
           imagination into reality by providing quality services & working on
@@ -642,7 +792,7 @@ const Training = () => {
           </strong>{" "}
           & many more based on Industry 4.0 standards.
         </p>
-        <p className="text-gray-700 leading-relaxed mb-6">
+        <p className="text-sm text-black leading-relaxed mb-4">
           With the belief to build a healthy ecosystem as per the Industry
           Standards <strong>REGex Software</strong> provides best Industry
           Oriented Courses in affordable prices. We organize top Training
@@ -666,7 +816,7 @@ const Training = () => {
         </p>
       </div>
       {/* Features Section */}
-      <div className="container mx-auto px-6 py-12 bg-blue-900">
+      <div className="w-full px-6 py-12 bg-blue-900">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {featuresData.map((feature, index) => (
             <div key={index} className="flex flex-col items-center">
@@ -685,8 +835,9 @@ const Training = () => {
           ))}
         </div>
       </div>
-      {/* Programs Section */}
-      <div className="container mx-auto px-6 py-12">
+
+      {/* Programs Section
+      <div className="container mx-auto px-34 py-12">
         <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">
           Our Programs
         </h2>
@@ -696,33 +847,70 @@ const Training = () => {
           {programsData.map((program, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-xl p-6 flex flex-col"
+              className="bg-white shadow-xl p-6 flex flex-col h-full"
             >
               <img
                 src={program.image}
                 alt={program.title}
-                className="mb-4 h-88 w-full object-cover rounded-lg"
+                className="mb-4 h-88 w-full object-cover"
               />
               <div className="flex-grow">
                 <h3 className="text-xl font-semibold text-blue-900 mb-2">
                   {program.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed text-sm mb-4">
+                <p className="text-black leading-relaxed text-sm mb-4">
                   {program.description}
                 </p>
-                <a
-                  href={program.readMoreLink}
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-md mt-auto"
-                >
-                  READ MORE
-                </a>
               </div>
+              <a
+                href={program.readMoreLink}
+                className="bg-blue-900 text-white font-medium py-2 px-4 rounded-md text-center mt-auto w-fit mx-auto"
+              >
+                READ MORE
+              </a>
+            </div>
+          ))}
+        </div>
+      </div> */}
+      {/* Programs Section */}
+      <div className="container mx-auto px-6 md:px-12 lg:px-32 py-12">
+        <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">
+          Our Programs
+        </h2>
+        <div className="mb-6 w-40 mx-auto border-b-2 border-blue-900"></div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {programsData.map((program, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-xl p-6 flex flex-col h-full"
+            >
+              <img
+                src={program.image}
+                alt={program.title}
+                className="mb-4 h-88 w-full object-cover"
+              />
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                  {program.title}
+                </h3>
+                <p className="text-black leading-relaxed text-sm mb-4">
+                  {program.description}
+                </p>
+              </div>
+              <a
+                href={program.readMoreLink}
+                className="bg-blue-900 text-white font-medium py-2 px-4 rounded-md text-center mt-auto w-fit mx-auto"
+              >
+                READ MORE
+              </a>
             </div>
           ))}
         </div>
       </div>
+
       {/* Why REGex Section */}
-      <header className="bg-gray-100 py-10">
+      <header className="bg-[#F8F9FA] py-12 py-10">
         <div className="container mx-auto px-8">
           <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
             Why REGex?
