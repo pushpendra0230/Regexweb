@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const AboutUs = () => {
-  // Define working data
   const workingData = [
     {
       img: "https://img.icons8.com/?size=80&id=67411&format=png",
@@ -11,6 +10,7 @@ const AboutUs = () => {
         "Questionnaire Based Tool Development & Deployment",
         "Reporting & Analysis",
       ],
+      border: true, // Add this field to enable a border for this entry
     },
     {
       img: "https://img.icons8.com/?size=48&id=HZHRVmthlVQ5&format=png",
@@ -20,6 +20,7 @@ const AboutUs = () => {
         "MCQ & Subjective Questionnaires",
         "Assessment reports & Analysis",
       ],
+      border: true,
     },
     {
       img: "https://img.icons8.com/?size=40&id=35127&format=png",
@@ -30,6 +31,7 @@ const AboutUs = () => {
         "Mentorship connect",
         "Industry oriented curriculum",
       ],
+      border: true,
     },
   ];
 
@@ -43,6 +45,7 @@ const AboutUs = () => {
         "Video courses design",
         "Course design as per business standards",
       ],
+      border: true, // Enable border for this item
     },
     {
       img: "https://img.icons8.com/?size=80&id=12345&format=png",
@@ -53,6 +56,7 @@ const AboutUs = () => {
         "Industry-level best practices",
         "Guidance from expert mentors",
       ],
+      border: true,
     },
     {
       img: "https://img.icons8.com/?size=50&id=37722&format=png",
@@ -63,6 +67,7 @@ const AboutUs = () => {
         "Management Skills",
         "Soft-skills & Leadership Development",
       ],
+      border: true,
     },
   ];
 
@@ -81,24 +86,26 @@ const AboutUs = () => {
       </div>
 
       {/* About Section */}
-      <div className="container mx-auto px-6 py-12 text-center">
-        <h2 className="text-3xl font-bold text-blue-900 mb-6">
+      <div className="container mx-auto px-6 sm:px-12 md:px-24 lg:px-36 py-12 text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-6">
           About REGex Software
         </h2>
-        <div className="mb-6 w-40 mx-auto border-b-2 border-blue-900"></div>
-        <p className="text-gray-700 leading-relaxed mb-6">
+        <div className="mb-6 w-20 sm:w-40 mx-auto border-b-2 border-blue-900"></div>
+
+        <p className="text-sm sm:text-base text-black leading-relaxed mb-6 max-w-[90%] mx-auto">
           <span className="font-bold">REGex Software Services</span> is devised
-          to bring an extra edge to Information Technology. We believe to
-          transform your imagination into reality by providing quality training
-          services & working on several technologies like Big Data, Machine
-          Learning, Artificial Intelligence, Data Science, Data Analytics, Cloud
+          to bring an extra edge to Information Technology. We believe in
+          transforming your imagination into reality by providing quality
+          training services & working on several technologies like Big Data,
+          Machine Learning, Artificial Intelligence, Data Science, Cloud
           Computing (AWS & Azure), Linux, DevOps, Java Full Stack, MEAN and MERN
           Stack, Competitive Programming with C++ and Java & many more based on
           Industry 4.0 standards. We are an amalgamation of technique,
           creativity and modern learnings with the synonym of perfection in
           playing with codes and jargons.
         </p>
-        <p className="text-gray-700 leading-relaxed">
+
+        <p className="text-sm sm:text-base text-black leading-relaxed max-w-[90%] mx-auto">
           Our teammates have delivered several Corporate Training in MNCs like
           Capgemini, Cognizant, Dell, Infosys, KPMG, Honeywell, KFH, Deloitte
           and colleges such as JECRC, PIET, PCE, JNU, Mahaveer College, St.
@@ -108,83 +115,96 @@ const AboutUs = () => {
           learning approaches.
         </p>
       </div>
-      <div className="mt-10 bg-blue-900 p-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 mt-2 text-center">
-          <div className="border-r border-gray-400 pr-4">
-            <h3 className="text-white text-xl font-bold">100+</h3>
-            <p className="text-gray-200">Globally Satisfied Clients</p>
+
+      <div className="py-6 px-6 sm:px-8 md:px-10">
+        <div className="max-w-screen-lg mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 text-center items-center bg-blue-900 py-4">
+          <div className="border-white pr-4 sm:border-r-2">
+            <h3 className="text-white text-lg sm:text-xl">100+ Globally</h3>
+            <p className="text-white text-lg sm:text-xl">Satisfied Clients</p>
           </div>
-          <div className="border-r border-gray-400 pr-4">
-            <h3 className="text-white text-xl font-bold">250+</h3>
-            <p className="text-gray-200">REGex Team Members</p>
+
+          <div className="border-white pr-4 sm:border-r-2">
+            <h3 className="text-white text-lg sm:text-xl">250+ REGex Team</h3>
+            <p className="text-white text-lg sm:text-xl">Members</p>
           </div>
-          <div className="border-r border-gray-400 pr-4">
-            <h3 className="text-white text-xl font-bold">60%</h3>
-            <p className="text-gray-200">Growth Per Annum</p>
+
+          <div className="border-white pr-4 sm:border-r-2">
+            <h3 className="text-white text-lg sm:text-xl">60% Growth Per</h3>
+            <p className="text-white text-lg sm:text-xl">Annum</p>
           </div>
-          <div className="border-r border-gray-400 pr-4">
-            <h3 className="text-white text-xl font-bold">500+</h3>
-            <p className="text-gray-200">Corporate Trainings Delivered</p>
+
+          <div className="border-white pr-4 sm:border-r-2">
+            <h3 className="text-white text-lg sm:text-xl">500+ Corporate</h3>
+            <p className="text-white text-lg sm:text-xl">Trainings Delivered</p>
           </div>
+
           <div>
-            <h3 className="text-white text-xl font-bold">ISO 27001:2015</h3>
-            <p className="text-gray-200">Certified</p>
+            <h3 className="text-white text-lg sm:text-xl">ISO 27001:2015</h3>
+            <p className="text-white text-lg sm:text-xl">Certified</p>
           </div>
         </div>
       </div>
+
       {/* Working Section */}
-      <div className="container mx-auto px-6 py-12 text-center">
-        <h2 className="text-3xl font-bold text-blue-900 mb-6">Our Working</h2>
+      <div className="container mx-auto py-6 px-6 sm:px-12 lg:px-24 text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-6">
+          Our Working
+        </h2>
         <div className="mb-6 w-40 mx-auto border-b-2 border-blue-900"></div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-6 px-6 sm:px-10 gap-6">
           {workingData.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md p-6 h-auto w-full"
+              className="relative bg-white rounded-lg shadow-md p-6"
             >
               <img
                 src={item.img}
                 alt={item.title}
-                className="mx-auto mb-4 h-16 w-16"
+                className="mx-auto mb-4 h-14 w-14 sm:h-16 sm:w-16"
               />
-              <h3 className="text-xl font-semibold text-blue-900 mb-2">
+              <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-2">
                 {item.title}
               </h3>
-              <ul className="text-gray-700 leading-relaxed text-sm">
+              <ul className="text-black leading-relaxed text-sm">
                 {item.points.map((point, i) => (
                   <li key={i}>- {point}</li>
                 ))}
               </ul>
+              {item.border && (
+                <div className="w-full border-t-4 border-blue-900 mt-4"></div>
+              )}
             </div>
           ))}
         </div>
       </div>
 
       {/* Additional Services Section */}
-      <div className="container mx-auto px-6 py-12 text-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="container mx-auto px-6 sm:px-12 lg:px-24 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-6 px-6 sm:px-10 gap-6">
           {additionalData.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg shadow-md p-6 h-auto w-full"
-            >
+            <div key={index} className="bg-white rounded-lg shadow-md p-6">
               <img
                 src={item.img}
                 alt={item.title}
-                className="mx-auto mb-4 h-16 w-16"
+                className="mx-auto mb-4 h-14 w-14 sm:h-16 sm:w-16"
               />
-              <h3 className="text-xl font-semibold text-blue-900 mb-2">
+              <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-2">
                 {item.title}
               </h3>
-              <ul className="text-gray-700 leading-relaxed text-sm">
+              <ul className="text-black leading-relaxed text-sm">
                 {item.points.map((point, i) => (
                   <li key={i}>- {point}</li>
                 ))}
               </ul>
+              {item.border && (
+                <div className="w-full border-t-4 border-blue-900 mt-4"></div>
+              )}
             </div>
           ))}
         </div>
       </div>
+
       {/* Why Join REGex Section */}
       <div className="container mx-auto px-6 py-12 text-center">
         <h2 className="text-3xl font-bold text-blue-900 mb-6">
@@ -232,14 +252,6 @@ const AboutUs = () => {
           ))}
         </div>
       </div>
-      {/* <div className="text-center mt-8">
-        <NavLink
-          to="/Allabout"
-          className="text-blue-500 hover:text-blue-700 font-bold"
-        >
-          Learn More About Us
-        </NavLink>
-      </div> */}
       <NavLink to="/Allabout"></NavLink>
       <div className="container mx-auto px-6 py-12">
         {/* Our Team Section */}
